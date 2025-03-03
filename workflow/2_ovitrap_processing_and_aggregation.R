@@ -187,8 +187,3 @@ bio.matrix<-do.call(rbind.data.frame, myOut)
 head(bio.matrix)
 dim(bio.matrix)
 summary(bio.matrix)
-
-bio.matrix <- bio.matrix %>%
-  select("ID", "Country", "Region", "temporalID", "date", "value", "S1.52", "C1.52", "S2.52", "C2.52", 
-         "lat", "year", "week", "med_TAVG", "med_TAVG.lag2", "med_TAVG.lag3", "sum_PREC", "sum_PREC.lag2", 
-         "sum_PREC.lag3", "medianPhotoweek", "medianPhotoweek.lag2", "medianPhotoweek.lag3", "value.lag1")
